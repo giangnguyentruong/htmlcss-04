@@ -515,6 +515,35 @@ a {
 .about-media-below__icon:last-child {
     bottom: -55px;
     right: -42px;
+    animation: icon-last-child 5s 1 2s;
+}
+
+@keyframes icon-last-child {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+
+    50% {
+        transform: rotate(0deg);
+        left: 400px;
+    }
+    /* 55% {
+        transform: rotate(0deg);
+        left: 400px;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 400px;
+    } */
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
 }
 
 .about-content-below__desc {
@@ -1360,7 +1389,7 @@ a {
 }
 
 .footer__link {
-    color: #656689;
+    color: var(--text-color);
     font-size: 1.4rem;
     line-height: 2; /* 200% */
     white-space: nowrap;
